@@ -10,14 +10,14 @@ print 'tamanho da lista: ',tamanhoLista
 i=0
 for item in conteudo:
     item=item.strip()
-    print item
+    #print item
 
 listaSQL = []
 for item in conteudo:
    item.replace("\n"," ")
    item=item.strip()
-   linha=string.split(item,"	")
-   dados="INSERT INTO CMVColtaco3 (id, descricaoAlimento, umidade, energiaKcal, energiaKj) VALUES (''"
+   linha=string.split(item,";")
+   dados="INSERT INTO CMVColtaco3 (id, categoria, descricaoAlimento, umidade, energiaKcal, energiaKj, proteina, lipideos, colesterol, carboidrato, fibraAlimentar, cinzas, calcio, magnesio, manganes, fosforo, ferro, sodio, potassio, cobre, zinco, retinol, re, rae, tiamina, riboflavina, piridoxina, niacina, vitaminaC, sdataGerado) VALUES (''"
    t=0
    while (t < len(linha)):
        dados = dados+",'"+linha[t]+"'"
