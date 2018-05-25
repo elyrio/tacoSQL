@@ -2,7 +2,7 @@
 import string
 
 arquivo = open('taco_CMVCol.csv','r')
-arquivoSQL =open('tabelaCMVCol_taco3.sql','wr')
+arquivoSQL =open('insertCMVCol_taco3.sql','wr')
 conteudo=arquivo.readlines()
 
 tamanhoLista= len(conteudo)
