@@ -27,5 +27,6 @@ CREATE TABLE `nutricao`.`CMVColtaco3` ( `id` INT(3) NOT NULL AUTO_INCREMENT ,
                               `piridoxina` VARCHAR(20) NOT NULL,
                               `niacina` VARCHAR(20) NOT NULL,
                               `vitaminaC` VARCHAR(20) NOT NULL,
-                              `sdataGerado` VARCHAR(20) NOT NULL,
+                              `created_at` VARCHAR(30) NOT NULL,
+                              `updated_at` VARCHAR(30) NOT NULL,
                               PRIMARY KEY (`id`)) ENGINE = InnoDB;
