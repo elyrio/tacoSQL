@@ -17,7 +17,7 @@ for item in conteudo:
    item.replace("\n"," ")
    item=item.strip()
    linha=string.split(item,";")
-   dados="INSERT INTO CMVColtaco3 (id, categoria, descricaoAlimento, umidade, energiaKcal, energiaKj, proteina, lipideos, colesterol, carboidrato, fibraAlimentar, cinzas, calcio, magnesio, manganes, fosforo, ferro, sodio, potassio, cobre, zinco, retinol, re, rae, tiamina, riboflavina, piridoxina, niacina, vitaminaC, created_at, updated_at) VALUES (''"
+   dados="INSERT INTO CMVColtaco3 (id, categoria, numeroAlimento, descricaoAlimento, umidade, energiaKcal, energiaKj, proteina, lipideos, colesterol, carboidrato, fibraAlimentar, cinzas, calcio, magnesio, manganes, fosforo, ferro, sodio, potassio, cobre, zinco, retinol, re, rae, tiamina, riboflavina, piridoxina, niacina, vitaminaC, created_at, updated_at) VALUES (''"
    t=0
    while (t < len(linha)):
        dados = dados+",'"+linha[t]+"'"
